@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --header-height: 3rem;
+    --dark-color: #141414;
+    --dark-color-lighten: #f2f2f2;
+    --white-color: #fff;
+    --body-font: "Poppins", sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--dark-color);
+}
+
+.header-1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-color-lighten);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 2rem;
+}
+
+.nav__logo {
+    font-weight: 700;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.home {
+    background-color: var(--dark-color-lighten);
+    padding-top: calc(var(--header-height) + 2rem);
+}
+
+.home__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home__sneaker {
+    position: relative;
+}
+
+.home__shape {
+    width: 220px;
+    height: 220px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+}
+
+.home__img {
+    width: 275px;
+    position: absolute;
+    transform: rotate(-30deg);
+}
+
+.home__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
